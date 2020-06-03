@@ -1,5 +1,7 @@
 package com.andy.plugin.scan
 
+import org.objectweb.asm.ClassWriter
+
 class AsmEntry {
 
     static void transformDirrectoryToScan(File directory) {
@@ -20,7 +22,10 @@ class AsmEntry {
     }
 
     static void scanClassFile(File classFile) {
-        JarScanner.scanClass(classFile)
+        ClassWriter classWriter = JarScanner.scanClass(classFile)
+        FileOutputStream fos = new FileOutputStream("after_visit_$classFile.name")
+        fos.write(classWriter.toByteArray())
+        fos.close()
     }
 
 
