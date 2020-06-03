@@ -1,0 +1,40 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenLocal()
+    }
+    dependencies {
+//        classpath ("com.andy.scan:scan-com.andy.plugin:1.0") {changing=true}
+    }
+}
+
+plugins {
+    id 'java'
+    id 'groovy'
+}
+
+group 'com.andy.aop'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'com.google.code.gson:gson:2.8.6'
+
+    compile project(':asm')
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenLocal()
+    }
+}
+//apply com.andy.plugin: 'com.andy.scan.com.andy.plugin'

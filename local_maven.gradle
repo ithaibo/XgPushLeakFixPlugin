@@ -1,0 +1,13 @@
+apply plugin: 'maven'
+
+uploadArchives {
+    repositories.mavenDeployer {
+        def mavenDirPath = file(MAVEN_DIR)
+        repository(url:"file://${mavenDirPath.absolutePath}")
+        pom.project {
+            groupId POM_GROUP_ID
+            artifactId POM_ARTIFACT_ID
+            version VERSION_NAME
+        }
+    }
+}
