@@ -4,6 +4,8 @@ import com.android.build.api.transform.*
 import com.android.build.gradle.internal.pipeline.TransformTask
 import com.andy.plugin.model.FieldBean
 import com.andy.plugin.model.MethodBean
+import com.andy.plugin.model.Params
+import com.andy.plugin.scan.MethodTracer
 import com.andy.plugin.util.Log
 import com.andy.plugin.util.Util
 import com.andy.plugin.visitor.FieldVisitorFactory
@@ -87,14 +89,10 @@ abstract class TraceTransform extends BaseProxyTransform {
     }
 
     @Override
-    void transform(TransformInvocation transformInvocation)
-            throws TransformException,
-                    InterruptedException,
-                    IOException {
+    void transform(TransformInvocation transformInvocation) throws TransformException, InterruptedException, IOException {
         long start = System.currentTimeMillis()
         final boolean isIncremental = transformInvocation.isIncremental() && this.isIncremental()
-        final File rootOutput = new File(project.getBuildDir().getAbsolutePath() + File.separator + "asmoutput",
-                "classes/${getName()}/")
+        final File rootOutput = new File(project.getBuildDir().getAbsolutePath() + File.separator + "asmoutput", "classes/${getName()}/")
         if (!rootOutput.exists()) {
             rootOutput.mkdirs()
         }
@@ -102,29 +100,40 @@ abstract class TraceTransform extends BaseProxyTransform {
         Map<File, File> jarInputMap = new HashMap<>()
         Map<File, File> scrInputMap = new HashMap<>()
 
+        Log.i("ASM." + getName(), "start to collect classes...")
         transformInvocation.inputs.each { TransformInput input ->
             input.directoryInputs.each { DirectoryInput dirInput ->
+                Log.i("ASM." + getName(), "collect classes in dir, dir:%s", dirInput.file.absolutePath)
                 collectAndIdentifyDir(scrInputMap, dirInput, rootOutput, isIncremental)
             }
             input.jarInputs.each { JarInput jarInput ->
                 if (jarInput.getStatus() != Status.REMOVED) {
+                    Log.i("ASM." + getName(), "collect classes in jar:%s", jarInput.file.absolutePath)
                     collectAndIdentifyJar(jarInputMap, scrInputMap, jarInput, rootOutput, isIncremental)
                 }
             }
         }
+        Log.i("ASM." + getName(), "collect done.")
 
 
-        trace(scrInputMap, jarInputMap)
+        Log.i("ASM." + getName(), "start to transform...")
+//        trace(scrInputMap, jarInputMap)
+        //transform config
+        Params.methodVisitorMap = obtainMethodVisitorMap()
+        Params.fieldVisitorMap = obtainFieldVistorMap()
+
+        //do transform
+        MethodTracer methodTracer = new MethodTracer()
+        methodTracer.trace(scrInputMap, jarInputMap)
         origTransform.transform(transformInvocation)
+
+        Log.i("ASM." + getName(), "transform done.")
         Log.i("ASM." + getName(), "[transform] cost time: %dms", System.currentTimeMillis() - start)
     }
 
 
 
-    private static void collectAndIdentifyDir(Map<File, File> dirInputMap,
-                                              DirectoryInput input,
-                                              File rootOutput,
-                                              boolean isIncremental) {
+    protected void collectAndIdentifyDir(Map<File, File> dirInputMap, DirectoryInput input, File rootOutput, boolean isIncremental) {
         final File dirInput = input.file
         final File dirOutput = new File(rootOutput, input.file.getName())
         if (!dirOutput.exists()) {
@@ -165,11 +174,7 @@ abstract class TraceTransform extends BaseProxyTransform {
         replaceFile(input, dirOutput)
     }
 
-    private void collectAndIdentifyJar(Map<File, File> jarInputMaps,
-                                       Map<File, File> dirInputMaps,
-                                       JarInput input,
-                                       File rootOutput,
-                                       boolean isIncremental) {
+    protected void collectAndIdentifyJar(Map<File, File> jarInputMaps, Map<File, File> dirInputMaps, JarInput input, File rootOutput, boolean isIncremental) {
         final File jarInput = input.file
         final File jarOutput = new File(rootOutput, getUniqueJarName(jarInput))
         if (Util.isRealZipOrJar(jarInput)) {
@@ -229,7 +234,7 @@ abstract class TraceTransform extends BaseProxyTransform {
     }
 
 
-    private static String getTransformTaskName(String customDexTransformName,
+    protected static String getTransformTaskName(String customDexTransformName,
                                                String wrappSuffix,
                                                String buildTypeSuffix) {
         if(customDexTransformName != null && customDexTransformName.length() > 0) {

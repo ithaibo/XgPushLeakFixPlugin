@@ -10,6 +10,7 @@ import com.andy.plugin.visitor.MethodVisitorFactory;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.FieldVisitor;
 import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
 
 public class CommonClassVisitor extends ClassVisitor {
     private final static String TAG = "ClassVisitor";
@@ -21,6 +22,7 @@ public class CommonClassVisitor extends ClassVisitor {
 
     @Override
     public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
+        Log.i(TAG, "visit, class:%s", name);
         classBean = new ClassBean();
         classBean.version = version;
         classBean.access = access;
@@ -38,13 +40,17 @@ public class CommonClassVisitor extends ClassVisitor {
                                      String desc,
                                      String signature,
                                      String[] exceptions) {
-        MethodVisitor superVisitor = super.visitMethod(access, name, desc, signature, exceptions);
+        MethodVisitor rawVisitor = super.visitMethod(access, name, desc, signature, exceptions);
 
-        if (null == Params.methodVisitorMap ||
-        Params.methodVisitorMap.isEmpty()) {
+        //scan method invoked
+        MethodVisitor superVisitor = new ScanMethodVisitor(Opcodes.ASM5, rawVisitor, classBean.name, name, desc);
+
+        if (null == Params.methodVisitorMap || Params.methodVisitorMap.isEmpty()) {
+            Log.i(TAG, "visitMethod, no method to visit");
             return superVisitor;
         }
 
+        Log.i(TAG, "visitMethod, name:%s, desc:%s", name, desc);
         for (MethodBean methodBean : Params.methodVisitorMap.keySet()) {
             if (classBean.name.equals(methodBean.owner) &&
                     name.equals(methodBean.name) &&

@@ -22,6 +22,7 @@ class JarScanner {
      * @param output 处理后的jar
      */
     static void innerTraceMethodFromJar(File input, File output) {
+        Log.i(TAG, "transform jar, input:%s, output:%s", input.absolutePath, output.absolutePath)
         ZipOutputStream zipOutputStream = null
         ZipFile zipFile = null
         try {

@@ -23,20 +23,20 @@ abstract class BaseProxyTransform extends Transform {
 
     @Override
     Set<QualifiedContent.ContentType> getInputTypes() {
-//        return origTransform.getInputTypes()
-        return TransformManager.CONTENT_CLASS
+        return origTransform.getInputTypes()
+//        return TransformManager.CONTENT_CLASS
     }
 
     @Override
     Set<QualifiedContent.Scope> getScopes() {
-//        return origTransform.getScopes()
-        return TransformManager.SCOPE_FULL_PROJECT
+        return origTransform.getScopes()
+//        return TransformManager.SCOPE_FULL_PROJECT
     }
 
     @Override
     boolean isIncremental() {
-//        return origTransform.isIncremental()
-        return false
+        return origTransform.isIncremental()
+//        return false
     }
 
     protected String getUniqueJarName(File jarFile) {

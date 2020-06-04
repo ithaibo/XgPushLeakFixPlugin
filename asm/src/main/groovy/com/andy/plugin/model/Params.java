@@ -16,4 +16,5 @@ public class Params {
 
     public static Map<MethodBean, MethodVisitorFactory> methodVisitorMap;
     public static Map<FieldBean, FieldVisitorFactory> fieldVisitorMap;
+    public static List<String> methodToScan;
 }
