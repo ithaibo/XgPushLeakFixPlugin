@@ -1,11 +1,16 @@
 buildscript {
     repositories {
+        def path = 'file://' + new File('\\mavendir').absolutePath
+        maven {url path}
+
         google()
         jcenter()
         mavenLocal()
     }
-    dependencies {
-//        classpath ("com.andy.scan:scan-com.andy.plugin:1.0") {changing=true}
+    configurations.all {
+        // check for updates every build
+        resolutionStrategy.cacheDynamicVersionsFor 60, 'seconds'
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
     }
 }
 
@@ -13,6 +18,13 @@ plugins {
     id 'java'
     id 'groovy'
 }
+
+configurations.all {
+    // check for updates every build
+    resolutionStrategy.cacheDynamicVersionsFor 60, 'seconds'
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
 
 group 'com.andy.aop'
 version '1.0-SNAPSHOT'
@@ -32,6 +44,9 @@ dependencies {
 
 allprojects {
     repositories {
+        def path = 'file://' + new File('\\mavendir').absolutePath
+        maven {url path}
+
         google()
         jcenter()
         mavenLocal()

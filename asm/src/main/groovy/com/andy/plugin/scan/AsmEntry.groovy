@@ -1,5 +1,6 @@
 package com.andy.plugin.scan
 
+import com.andy.plugin.model.Params
 import com.andy.plugin.util.PluginUtil
 import org.objectweb.asm.ClassWriter
 

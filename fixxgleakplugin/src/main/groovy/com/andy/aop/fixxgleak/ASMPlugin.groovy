@@ -1,5 +1,6 @@
 package com.andy.aop.fixxgleak
 
+import com.android.build.gradle.AppExtension
 import org.gradle.api.GradleException
 import org.gradle.api.Plugin
 import org.gradle.api.Project

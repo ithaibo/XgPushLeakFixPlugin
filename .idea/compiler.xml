@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="scan.asm.main" target="1.8" />
+      <module name="scan.asm.test" target="1.8" />
+      <module name="scan.baseplugin.main" target="1.8" />
+      <module name="scan.baseplugin.test" target="1.8" />
+      <module name="scan.fixxgleakplugin.main" target="1.8" />
+      <module name="scan.fixxgleakplugin.test" target="1.8" />
+      <module name="scan.main" target="1.8" />
+      <module name="scan.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

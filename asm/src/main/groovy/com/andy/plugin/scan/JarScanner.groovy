@@ -7,8 +7,6 @@ import org.objectweb.asm.ClassReader
 import org.objectweb.asm.ClassVisitor
 import org.objectweb.asm.ClassWriter
 import org.objectweb.asm.Opcodes
-import org.objectweb.asm.util.CheckClassAdapter
-import org.objectweb.asm.util.TraceClassVisitor
 
 import java.util.zip.ZipEntry
 import java.util.zip.ZipFile
@@ -18,6 +16,11 @@ class JarScanner {
     private static String TAG = "JarScanner"
 
 
+    /**
+     * 扫描并处理jar中的类
+     * @param input 待扫描的jar
+     * @param output 处理后的jar
+     */
     static void innerTraceMethodFromJar(File input, File output) {
         ZipOutputStream zipOutputStream = null
         ZipFile zipFile = null
@@ -61,6 +64,11 @@ class JarScanner {
     }
 
 
+    /**
+     * 扫描并处理单个class文件
+     * @param file class文件
+     * @return 处理后的class文件
+     */
     static ClassWriter scanClass(File file) {
         if(null == file || !file.isFile() || !file.exists()) {
             return
@@ -70,10 +78,15 @@ class JarScanner {
     }
 
 
+    /**
+     * 根据输入的class，返回对应处理的ClassWriter
+     * @param inputStream class文件内容
+     * @return 处理class的ClassWriter
+     */
     static ClassWriter scanClass(InputStream inputStream) {
         ClassReader classReader = new ClassReader(inputStream)
         ClassWriter classWriter = new ClassWriter(ClassWriter.COMPUTE_MAXS)
-        ClassVisitor classVisitor = new FixXgLeakClassVisitor(Opcodes.ASM5, classWriter)
+        ClassVisitor classVisitor = new CommonClassVisitor(Opcodes.ASM5, classWriter)
         classReader.accept(classVisitor, ClassReader.EXPAND_FRAMES)
         return classWriter
     }
