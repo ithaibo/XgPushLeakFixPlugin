@@ -10,6 +10,7 @@ class ConstructorVisitorTecentTpushStatg45 extends AdviceAdapter {
 
     ConstructorVisitorTecentTpushStatg45(String ownerClassName, int api, MethodVisitor mv, int access, String name, String desc) {
         super(api, mv, access, name, desc)
+        this.className = ownerClassName
     }
 
     void setClassName(String className) {
