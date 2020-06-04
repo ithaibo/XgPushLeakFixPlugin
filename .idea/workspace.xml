@@ -2,87 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53b03643-20b5-4803-b490-1a87a0cafce0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/asm/asm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asm/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/ClassScan.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/FiledScanResult.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/Params.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/CommonClassVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/result/FieldScanResultHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/result/MethodScanResultHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/visitor/FieldVisitorFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/visitor/MethodVisitorFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/visitor/VisitorFactories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/baseplugin/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixxgleakplugin/fixxgleakplugin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ConstructorVisitorTecentTpushStatg45.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/MethodVisitorTecentTpushStatEvent_d_a.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/TraceTransform.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/XgEventDaVisitorFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/XgG45MethodVisitorFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/after_visit_d.class" beforeDir="false" afterPath="$PROJECT_DIR$/after_visit_d.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/after_visit_g$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/after_visit_g$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/after_visit_g$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/after_visit_g$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/asm/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/Matcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/biz/Compact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/biz/ConstructorVisitorTecentTpushStatg45.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/biz/XgEventDaMatcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/biz/XgG4Matcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/biz/XgG5Matcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/FieldBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/FieldBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/AsmEntry.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/AsmEntry.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/ClassScan.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/ConstructorVisitorTecentTpushStatg45.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/FieldScanResultHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/FiledScanResult.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/FixXgLeakClassVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/FixXgLeakMethodVisitor.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/JarScanner.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/JarScanner.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/MethodScanResultHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/MethodVisitorTecentTpushStatEvent_d_a.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/Params.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/ScanFieldVisitor.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/fixxgleakplugin/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/fixxgleakplugin/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMPlugin.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMPlugin.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMTraceTransform.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMTraceTransform.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/BaseProxyTransform.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/BaseProxyTransform.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/Matcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/biz/Compact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/biz/ConstructorVisitorTecentTpushStatg45.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/biz/XgEventDaMatcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/biz/XgG4Matcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/biz/XgG5Matcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/model/ClassBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/model/FieldBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/model/FieldInvokeBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/model/InvokeScanned.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/model/MethodBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/model/MethodInvokeBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/AsmEntry.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/ClassScan.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/FieldScanResultHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/FiledScanResult.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/FixXgLeakClassVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/FixXgLeakMethodVisitor.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/JarScanner.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/MethodScanResultHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/MethodTracer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/MethodVisitorTecentTpushStatEvent_d_a.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/Params.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/ScanFieldVisitor.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/ScanResultHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/util/Log.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/util/PluginUtil.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/util/ReflectUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/util/Util.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/groovy/Entry.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/Entry.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -166,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMTraceTransform.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="522">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -184,11 +104,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/BaseProxyTransform.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
-              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            <state relative-caret-position="972">
+              <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -197,7 +126,7 @@
         <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMPlugin.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="338">
-              <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
               <folding>
                 <element signature="e#32#76#0" expanded="true" />
               </folding>
@@ -275,7 +204,6 @@
         <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/biz/XgEventDaMatcher.java" />
         <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/FixXgLeakClassVisitor.java" />
         <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/AsmEntry.groovy" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/AsmEntry.groovy" />
         <option value="$PROJECT_DIR$/local.properties" />
         <option value="$PROJECT_DIR$/local_maven.gradle" />
@@ -309,6 +237,7 @@
         <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMPlugin.groovy" />
         <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMTraceTransform.groovy" />
         <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/BaseProxyTransform.groovy" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -333,13 +262,7 @@
             <path>
               <item name="scan" type="b2602c69:ProjectViewProjectNode" />
               <item name="scan" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="fixxgleakplugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="scan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scan" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="fixxgleakplugin" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -401,6 +324,96 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.scan:fixxgleakplugin [uploadArchives]">
+    <configuration default="true" type="AndroidJUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Entry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Entry" />
+      <module name="scan.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="scan:asm [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/asm" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="uploadArchives" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="scan:fixxgleakplugin [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/fixxgleakplugin" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="scan:fixxgleakplugin [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/fixxgleakplugin" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="scan:fixxgleakplugin [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/fixxgleakplugin" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="uploadArchives" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.scan:fixxgleakplugin [build]" />
@@ -439,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591169008337</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[dev]:{代码优化}">
+      <created>1591249277398</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591249277398</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -454,7 +474,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17019667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17019667" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -469,7 +489,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.47098976" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.63822526" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32935154" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.83959043" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.39249146" />
@@ -491,7 +511,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[dev]:{init}" />
     <MESSAGE value="[dev]:{demo直接使用plugin}" />
-    <option name="LAST_COMMIT_MESSAGE" value="[dev]:{demo直接使用plugin}" />
+    <MESSAGE value="[dev]:{代码优化}" />
+    <option name="LAST_COMMIT_MESSAGE" value="[dev]:{代码优化}" />
   </component>
   <component name="WindowStateProjectService">
     <state width="421" height="398" key="Git.Branch.Popup" />
@@ -499,13 +520,6 @@
     <state width="421" height="398" key="Git.Branch.Popup@1366.768" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/FieldBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="106" selection-start-line="10" selection-start-column="106" selection-end-line="10" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/FixXgLeakMethodVisitor.groovy" />
     <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/JarScanner.groovy">
       <provider selected="true" editor-type-id="text-editor">
@@ -792,20 +806,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMPlugin.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding>
-            <element signature="e#32#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMTraceTransform.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -820,10 +824,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMPlugin.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <element signature="e#32#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/BaseProxyTransform.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="972">
+          <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
