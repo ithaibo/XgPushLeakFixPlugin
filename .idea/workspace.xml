@@ -2,7 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53b03643-20b5-4803-b490-1a87a0cafce0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/ScanMethodVisitor.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/HandlerThreadScanThreadFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toscan/XG4HWPush.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toscan/XG4MZPush.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toscan/XG4XMPush.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toscan/Xg_sdk_4.3.2_20190222_1535.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toscan/wup-1.0.0.E-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/after_visit_d.class" beforeDir="false" afterPath="$PROJECT_DIR$/after_visit_d.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/after_visit_g$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/after_visit_g$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/after_visit_g$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/after_visit_g$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asm/asm.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/Params.java" beforeDir="false" afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/Params.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/CommonClassVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/CommonClassVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/JarScanner.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/JarScanner.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/fixxgleakplugin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMPlugin.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMPlugin.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMTraceTransform.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMTraceTransform.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/BaseProxyTransform.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/BaseProxyTransform.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/TraceTransform.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/TraceTransform.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/groovy/Entry.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/groovy/Entry.groovy" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -18,6 +39,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="module" />
+    </option>
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
@@ -51,25 +77,18 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="scan" type="f1a62948:ProjectNode" />
-                <item name="fixxgleakplugin" type="2d1252cf:ModuleNode" />
+                <item name="asm" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="scan" type="f1a62948:ProjectNode" />
-                <item name="fixxgleakplugin" type="2d1252cf:ModuleNode" />
+                <item name="asm" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="scan" type="f1a62948:ProjectNode" />
-                <item name="fixxgleakplugin" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="scan" type="f1a62948:ProjectNode" />
-                <item name="fixxgleakplugin" type="2d1252cf:ModuleNode" />
+                <item name="asm" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="upload" type="c8890929:TasksNode$1" />
               </path>
@@ -82,54 +101,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMTraceTransform.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/TraceTransform.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-              <folding>
-                <element signature="n#!!block;n#inject#0;n#!!block;n#TraceTransform#0" />
-                <element signature="n#!!block;n#collectAndIdentifyJar#0;n#!!block;n#TraceTransform#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/BaseProxyTransform.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/main/groovy/Entry.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="649">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMPlugin.groovy">
+        <entry file="file://$PROJECT_DIR$/after_visit_d.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-              <folding>
-                <element signature="e#32#76#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-18">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
@@ -146,13 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>'</find>
-      <find>com/andy/test/Demo#log(Ljava/lang/String;[Ljava/lang/Object;)V</find>
-      <find>invoked</find>
-      <find>visitFieldInsn</find>
-      <find>class com/tencent/android/tpush/stat/g$4</find>
-      <find>com/tencent/android/tpush/stat/g$4#&lt;init&gt;(Ljava/lang/String;Landroid/content/Context;J)V</find>
-      <find>l1</find>
       <find>method</find>
       <find>end</find>
       <find>getApplicationContext</find>
@@ -170,6 +151,19 @@
       <find>createTransform</find>
       <find>getBuild</find>
       <find>collectAndIdentifyDir</find>
+      <find>scrInputMap, jarInputMap</find>
+      <find>Map&lt;File, File&gt; srcFolderList, Map&lt;File, File&gt; dependencyJarList</find>
+      <find>scrInputMap</find>
+      <find>collectAndIdentifyJar(jarInputMap, scrInputMap, jarInput, rootOutput, isIncremental)</find>
+      <find>HandlerThread</find>
+      <find>visit, class:</find>
+      <find>visit, class:com/tencent/android/tpush/</find>
+      <find>com/tencent/android/tpush/stat</find>
+      <find>android/os/Handler</find>
+      <find>android/os/HandlerThread</find>
+      <find>com/tencent/android/tpush/common/c</find>
+      <find>JceStruct</find>
+      <find>android/os/HandlerThread#&lt;init&gt;(Ljava/lang/String;)V</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -187,10 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/FixXgLeakMethodVisitor.groovy" />
-        <option value="$PROJECT_DIR$/src/main/java/com/Demo.java" />
-        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/ConstructorVisitorcom_tentcent_android_tpush_stat_g45.groovy" />
-        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/ConstructorVisitorTecentTpushStatg45.groovy" />
         <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/MethodVisitorTecentTpushStatEvent_d_a.groovy" />
         <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/plugin/scan/JarScanner.groovy" />
         <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/MethodVisitorTecentTpushStatEvent_d_a.groovy" />
@@ -210,12 +200,10 @@
         <option value="$PROJECT_DIR$/fixxgleakplugin/gradle.properties" />
         <option value="$PROJECT_DIR$/asm/gradle.properties" />
         <option value="$PROJECT_DIR$/gradle.properties" />
-        <option value="$PROJECT_DIR$/src/main/groovy/Entry.groovy" />
         <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/BaseTraceTransform.groovy" />
         <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/Params.java" />
         <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/FieldBean.java" />
         <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/FixXgLeakClassVisitor.java" />
-        <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/JarScanner.groovy" />
         <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/result/FieldScanResultHandler.java" />
         <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/FiledScanResult.groovy" />
         <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/ClassScan.groovy" />
@@ -223,21 +211,27 @@
         <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/visitor/MethodVisitorFactory.java" />
         <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/visitor/FieldVisitorFactory.java" />
         <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/visitor/VisitorFactories.java" />
-        <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/Params.java" />
         <option value="$PROJECT_DIR$/asm/build.gradle" />
-        <option value="$PROJECT_DIR$/fixxgleakplugin/build.gradle" />
         <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/MethodVisitorTecentTpushStatEvent_d_a.groovy" />
         <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/XgEnventDaVisitorFactory.java" />
         <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/XgEventDaVisitorFactory.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/CommonClassVisitor.java" />
-        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ConstructorVisitorTecentTpushStatg45.groovy" />
         <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/XgG45MethodVisitorFactory.java" />
-        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/TraceTransform.groovy" />
-        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMPlugin.groovy" />
-        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMTraceTransform.groovy" />
-        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/BaseProxyTransform.groovy" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMPlugin.groovy" />
+        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/BaseProxyTransform.groovy" />
+        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ConstructorVisitorTecentTpushStatg45.groovy" />
+        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/TraceTransform.groovy" />
+        <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/JarScanner.groovy" />
+        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/HandlerThreadScanThreadFactory.java" />
+        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/HandlerThreadConstructVisitor.java" />
+        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/HandlerThreadConstructScanner.java" />
+        <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/Params.java" />
+        <option value="$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMTraceTransform.groovy" />
+        <option value="$PROJECT_DIR$/fixxgleakplugin/build.gradle" />
+        <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/CommonClassVisitor.java" />
+        <option value="$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/ScanMethodVisitor.groovy" />
+        <option value="$PROJECT_DIR$/src/main/groovy/Entry.groovy" />
       </list>
     </option>
   </component>
@@ -262,7 +256,30 @@
             <path>
               <item name="scan" type="b2602c69:ProjectViewProjectNode" />
               <item name="scan" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="after_scan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scan" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scan" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="scan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scan" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="groovy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scan" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="toscan" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -279,22 +296,22 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/asm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/toscan" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\labs\scan\fixxgleakplugin\src\main\resources" />
+      <recent name="E:\labs\scan\plugin\src\main" />
+      <recent name="E:\labs\scan\plugin\src" />
+      <recent name="E:\labs\scan\asm\src\main" />
+      <recent name="E:\labs\scan\asm\src" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\labs\scan\asm" />
-      <recent name="E:\labs\scan\fixxgleakplugin\libs" />
-      <recent name="E:\labs\scan\asm\src\main\groovy\com\andy\plugin" />
-      <recent name="E:\labs\scan\fixxgleakplugin\src\main\groovy\com\andy\plugin\scan" />
-      <recent name="E:\labs\scan\asm\src\main\groovy\com\andy\plugin\scan" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.andy.aop.fixxgleak" />
@@ -303,12 +320,12 @@
       <recent name="com.andy.plugin.scan" />
       <recent name="com.andy.plugin.biz" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\labs\scan\fixxgleakplugin\src\main\resources" />
-      <recent name="E:\labs\scan\plugin\src\main" />
-      <recent name="E:\labs\scan\plugin\src" />
-      <recent name="E:\labs\scan\asm\src\main" />
-      <recent name="E:\labs\scan\asm\src" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\labs\scan\toscan" />
+      <recent name="E:\labs\scan\asm\src\main\groovy\com\andy\plugin\scan" />
+      <recent name="E:\labs\scan\asm" />
+      <recent name="E:\labs\scan\fixxgleakplugin\libs" />
+      <recent name="E:\labs\scan\asm\src\main\groovy\com\andy\plugin" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -323,7 +340,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.scan:fixxgleakplugin [uploadArchives]">
+  <component name="RunManager" selected="Application.Entry">
     <configuration default="true" type="AndroidJUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -395,7 +412,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="scan:fixxgleakplugin [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="scan:fixxgleakplugin [help]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/fixxgleakplugin" />
@@ -406,7 +423,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="uploadArchives" />
+            <option value="help" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -416,11 +433,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.scan:fixxgleakplugin [build]" />
-        <item itemvalue="Gradle.scan:fixxgleakplugin [clean]" />
-        <item itemvalue="Gradle.scan:fixxgleakplugin [uploadArchives]" />
         <item itemvalue="Gradle.scan:asm [uploadArchives]" />
         <item itemvalue="Application.Entry" />
+        <item itemvalue="Gradle.scan:fixxgleakplugin [help]" />
+        <item itemvalue="Gradle.scan:fixxgleakplugin [build]" />
+        <item itemvalue="Gradle.scan:fixxgleakplugin [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -459,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591249277398</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[fix]:{NPE}">
+      <created>1591257148535</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591257148535</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -472,9 +496,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17019667" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16944024" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -484,14 +507,14 @@
       <window_info id="Structure" order="7" weight="0.25416037" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32423207" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36177474" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6279864" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35494882" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.63822526" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32935154" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.83959043" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.6177474" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.39249146" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.36967632" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -500,7 +523,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="ASM" order="4" weight="0.698941" />
       <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" weight="0.54689866" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.27382752" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
@@ -512,7 +535,8 @@
     <MESSAGE value="[dev]:{init}" />
     <MESSAGE value="[dev]:{demo直接使用plugin}" />
     <MESSAGE value="[dev]:{代码优化}" />
-    <option name="LAST_COMMIT_MESSAGE" value="[dev]:{代码优化}" />
+    <MESSAGE value="[fix]:{NPE}" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix]:{NPE}" />
   </component>
   <component name="WindowStateProjectService">
     <state width="421" height="398" key="Git.Branch.Popup" />
@@ -520,262 +544,38 @@
     <state width="421" height="398" key="Git.Branch.Popup@1366.768" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/FixXgLeakMethodVisitor.groovy" />
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/JarScanner.groovy">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.1.4/40de4335c88e0094edd4f2bbd9256a404bb87d07/gradle-api-3.1.4-sources.jar!/com/android/build/api/transform/TransformInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/3.1.4/6a543ae131c6c5e83d5549b56e92ff286f40cc33/gradle-core-3.1.4-sources.jar!/com/android/build/gradle/internal/pipeline/MutableDirectoryInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.1.4/40de4335c88e0094edd4f2bbd9256a404bb87d07/gradle-api-3.1.4-sources.jar!/com/android/build/api/transform/DirectoryInput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="88" column="49" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="49" />
-          <folding>
-            <element signature="n#!!block;n#innerTraceMethodFromJar#0;n#!!block;n#JarScanner#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/ConstructorVisitorTecentTpushStatg45.groovy" />
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/ScanFieldVisitor.groovy" />
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/ClassScan.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/FiledScanResult.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/result/MethodScanResultHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/result/FieldScanResultHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/visitor.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.1/81e81bd6c20b965f88d0462e2559f8759fc6c26d/asm-5.1-sources.jar!/org/objectweb/asm/MethodVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/visitor/MethodVisitorWithOwner.java" />
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/MethodTracer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="method#innerTraceMethodFromSrc#0;class#MethodTracer#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/visitor/FieldVisitorFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/visitor/VisitorFactories.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/core/org/gradle/plugin/use/internal/PluginRequestCollector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="54" column="32" lean-forward="true" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/core-api/org/gradle/plugin/use/PluginDependencySpec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/src/core-api/org/gradle/plugin/use/PluginDependenciesSpec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="914">
-          <caret line="117" column="25" selection-start-line="117" selection-start-column="25" selection-end-line="117" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.IdeaIC2019.1/system/log/idea.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132300">
-          <caret line="60" column="110" lean-forward="true" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/Params.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_maven.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/biz/XgG5Matcher.java" />
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/biz/ConstructorVisitorTecentTpushStatg45.groovy" />
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/biz/MethodVisitorTecentTpushStatEvent_d_a.groovy" />
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/biz/XgG4Matcher.java" />
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/biz/XgEventDaMatcher.java" />
-    <entry file="file://$PROJECT_DIR$/after_visit_d.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-960">
-          <folding>
-            <element signature="e#0#3577#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/visitor/MethodVisitorFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-124">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/CommonClassVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/groovy/Entry.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/mavendir/com/andy/asm/library/1.0.1-SNAPSHOT/library-1.0.1-20200603.093200-3.jar!/com/andy/plugin/biz/ConstructorVisitorTecentTpushStatg45.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/XgEventDaVisitorFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/InvokeScanned.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/ClassBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baseplugin/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/MethodVisitorTecentTpushStatEvent_d_a.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ConstructorVisitorTecentTpushStatg45.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/XgG45MethodVisitorFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.1.4/40de4335c88e0094edd4f2bbd9256a404bb87d07/gradle-api-3.1.4-sources.jar!/com/android/build/api/transform/JarInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+        <state relative-caret-position="338">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.1.4/40de4335c88e0094edd4f2bbd9256a404bb87d07/gradle-api-3.1.4-sources.jar!/com/android/build/api/transform/QualifiedContent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-984">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        <state relative-caret-position="456">
+          <caret line="151" column="9" selection-start-line="151" selection-start-column="9" selection-end-line="151" selection-end-column="9" />
           <folding>
             <element signature="class#ContentType#0;class#QualifiedContent#0" />
             <element signature="class#DefaultContentType#0;class#QualifiedContent#0" />
@@ -785,66 +585,350 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ParseJsonInBuild/desc_plugin/src/main/groovy/com/andy/plugin/desc/DescPlugin.groovy">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/3.1.4/6a543ae131c6c5e83d5549b56e92ff286f40cc33/gradle-core-3.1.4-sources.jar!/com/android/build/gradle/internal/pipeline/ImmutableTransformInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="31" column="69" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="69" />
+        <state relative-caret-position="162">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/3.1.4/6a543ae131c6c5e83d5549b56e92ff286f40cc33/gradle-core-3.1.4-sources.jar!/com/android/build/gradle/internal/pipeline/ImmutableJarInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="32" column="68" lean-forward="true" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.1.4/40de4335c88e0094edd4f2bbd9256a404bb87d07/gradle-api-3.1.4-sources.jar!/com/android/build/api/transform/Transform.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="94" column="37" selection-start-line="94" selection-start-column="37" selection-end-line="94" selection-end-column="37" />
+        <state relative-caret-position="1692">
+          <caret line="283" column="16" selection-start-line="283" selection-start-column="16" selection-end-line="283" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ParseJsonInBuild/desc_plugin/src/main/groovy/com/andy/plugin/desc/DescTransform.groovy">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/3.1.4/6a543ae131c6c5e83d5549b56e92ff286f40cc33/gradle-core-3.1.4-sources.jar!/com/android/build/gradle/internal/pipeline/QualifiedContentImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="38" column="50" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="50" />
+        <state relative-caret-position="252">
+          <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+          <folding>
+            <element signature="e#2150#2151#0" expanded="true" />
+            <element signature="e#2177#2178#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMTraceTransform.groovy">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/3.1.4/6a543ae131c6c5e83d5549b56e92ff286f40cc33/gradle-core-3.1.4-sources.jar!/com/android/build/gradle/internal/pipeline/ImmutableDirectoryInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="68">
+          <caret line="33" column="49" lean-forward="true" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/groovy-all-2.4.12.jar!/groovy/lang/GroovyObject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/lib/groovy-all-2.4.12.jar!/org/codehaus/groovy/runtime/ScriptBytecodeAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="70" column="45" lean-forward="true" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mavendir/com/andy/asm/library/1.0.1-SNAPSHOT/library-1.0.1-20200603.103033-4.jar!/com/andy/plugin/scan/MethodTracer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mavendir/com/andy/asm/library/1.0.1-SNAPSHOT/library-1.0.1-20200603.103033-4.jar!/com/andy/plugin/scan/AsmEntry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/AsmEntry.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="26" column="51" lean-forward="true" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/BaseProxyTransform.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/XgG45MethodVisitorFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/after_visit_g$4.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/after_visit_g$5.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ConstructorVisitorTecentTpushStatg45.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/util/Log.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mavendir/com/andy/asm/library/1.0.1-SNAPSHOT/library-1.0.1-20200603.103033-4.jar!/com/andy/plugin/model/MethodBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/新建文件夹/com/tencent/android/tpush/stat/g.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="103" column="39" lean-forward="true" selection-start-line="103" selection-start-column="39" selection-end-line="103" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/XgEventDaVisitorFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/TraceTransform.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+        <state relative-caret-position="1458">
+          <caret line="96" column="8" lean-forward="true" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
           <folding>
-            <element signature="n#!!block;n#inject#0;n#!!block;n#TraceTransform#0" />
-            <element signature="n#!!block;n#collectAndIdentifyJar#0;n#!!block;n#TraceTransform#0" />
+            <element signature="e#32#72#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mavendir/com/andy/asm/library/1.0.1-SNAPSHOT/library-1.0.1-20200603.103033-4.jar!/com/andy/plugin/visitor/MethodVisitorFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/MethodVisitorTecentTpushStatEvent_d_a.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/HandlerThreadConstructScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ScanPlugin/plugin_permission_api_scan/src/main/groovy/com/andy/plugin/scan/ScanMethodVisitor.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ScanPlugin/plugin_permission_api_scan/src/main/groovy/com/andy/plugin/scan/ScanClassVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="57" column="19" lean-forward="true" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/HandlerThreadScanThreadFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mavendir/com/andy/asm/library/1.0.1-SNAPSHOT/library-1.0.1-20200603.103033-4.jar!/com/andy/plugin/model/Params.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baseplugin/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asm/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asm/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="65" lean-forward="true" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMPlugin.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        <state relative-caret-position="360">
+          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
           <folding>
             <element signature="e#32#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/BaseProxyTransform.groovy">
+    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/model/Params.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+        <state relative-caret-position="144">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="jar://E:/mavendir/com/andy/asm/library/1.0.1-SNAPSHOT/library-1.0.1-20200604.092719-10.jar!/com/andy/plugin/scan/AsmEntry.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="234">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mavendir/com/andy/asm/library/1.0.1-SNAPSHOT/library-1.0.1-20200604.092719-10.jar!/com/andy/plugin/scan/MethodTracer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixxgleakplugin/src/main/groovy/com/andy/aop/fixxgleak/ASMTraceTransform.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="28" column="85" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/mavendir/com/andy/asm/library/1.0.1-SNAPSHOT/library-1.0.1-20200604.092719-10.jar!/com/andy/plugin/model/Params.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/CommonClassVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/MethodTracer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/JarScanner.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asm/src/main/groovy/com/andy/plugin/scan/ScanMethodVisitor.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+          <folding>
+            <element signature="e#31#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/新建文件夹/com/tencent/android/tpush/service/c/a.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/新建文件夹/com/tencent/android/tpush/service/c/a$3.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/after_visit_d.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/groovy/Entry.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
