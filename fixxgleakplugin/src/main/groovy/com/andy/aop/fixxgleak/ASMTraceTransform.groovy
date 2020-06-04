@@ -15,6 +15,10 @@ class ASMTraceTransform extends TraceTransform {
     private MethodVisitorFactory xgG46VisitorFactory = new XgG45MethodVisitorFactory()
     private MethodVisitorFactory xgEventDaVisitorFactory = new XgEventDaVisitorFactory()
 
+    ASMTraceTransform(Project project) {
+        super(project)
+    }
+
     ASMTraceTransform(Project project, def variant, Transform origTransform) {
         super(project, variant, origTransform)
     }

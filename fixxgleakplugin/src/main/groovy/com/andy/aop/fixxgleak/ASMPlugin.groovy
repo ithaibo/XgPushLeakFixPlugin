@@ -18,11 +18,14 @@ class ASMPlugin implements Plugin<Project> {
             throw new GradleException('ASM Plugin, Android Application plugin required')
         }
 
-        project.afterEvaluate {
-            def android = project.extensions.android
-            android.applicationVariants.all { variant ->
-                ASMTraceTransform.inject(project, variant)
-            }
-        }
+        project.extensions.findByType(AppExtension).registerTransform(new ASMTraceTransform(project))
+
+//        project.afterEvaluate {
+//            def android = project.extensions.android
+//            android.applicationVariants.all { variant ->
+//                ASMTraceTransform.inject(project, variant)
+//            }
+//        }
+
     }
 }

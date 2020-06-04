@@ -22,8 +22,9 @@ abstract class TraceTransform extends BaseProxyTransform {
     Project project
     def variant
 
-    TraceTransform() {
+    TraceTransform(Project project) {
         super()
+        this.project = project
     }
 
     TraceTransform(Project project, def variant, Transform origTransform) {
