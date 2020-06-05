@@ -8,5 +8,12 @@ public class Demo {
         this.a = var1;
         this.b = var2;
         this.c = var3;
+
+        Runnable cmd = new Runnable() {
+            @Override
+            public void run() {
+                //do nothing
+            }
+        };
     }
 }

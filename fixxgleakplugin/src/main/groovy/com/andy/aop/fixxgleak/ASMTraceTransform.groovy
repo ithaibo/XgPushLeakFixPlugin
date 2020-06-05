@@ -3,6 +3,7 @@ package com.andy.aop.fixxgleak
 import com.android.build.api.transform.Transform
 import com.android.build.api.transform.TransformException
 import com.android.build.api.transform.TransformInvocation
+import com.andy.aop.fixxgleak.visitor.AddTryCatchBlockFactory
 import com.andy.plugin.model.FieldBean
 import com.andy.plugin.model.MethodBean
 import com.andy.plugin.model.Params
@@ -18,6 +19,7 @@ class ASMTraceTransform extends TraceTransform {
     private Map<MethodBean, MethodVisitorFactory> methodVisitorMap
     private MethodVisitorFactory xgG46VisitorFactory = new XgG45MethodVisitorFactory()
     private MethodVisitorFactory xgEventDaVisitorFactory = new XgEventDaVisitorFactory()
+    private MethodVisitorFactory addTryCatchFactory = new AddTryCatchBlockFactory()
 
     ASMTraceTransform(Project project) {
         super(project)
@@ -36,6 +38,8 @@ class ASMTraceTransform extends TraceTransform {
             methodVisitorMap.put(prepareXgG4IntiMethodBean(), xgG46VisitorFactory)
             methodVisitorMap.put(prepareXgG5IntiMethodBean(), xgG46VisitorFactory)
             methodVisitorMap.put(prepareXgEventDaMethodBean(), xgEventDaVisitorFactory)
+
+            methodVisitorMap.put(prepareLifecycleRegistryAddTryCatch(), addTryCatchFactory)
 //            methodVisitorMap.put(prepareXgTpushWorkingThread(), )
 
         }
@@ -93,6 +97,23 @@ class ASMTraceTransform extends TraceTransform {
         mb.owner = "android/os/HandlerThread"
         mb.name = "<init>"
         mb.desc = "(Ljava/lang/String;)V"
+        return mb
+    }
+
+
+    static MethodBean prepareLifecycleRegistryAddTryCatch() {
+        return createOne(
+                'android/arch/lifecycle/LifecycleRegistry',
+                'calculateTargetState',
+                'Landroid/arch/lifecycle/LifecycleObserver;)Landroid/arch/lifecycle/Lifecycle/State'
+        )
+    }
+
+    static MethodBean createOne(String ownerClass, String name, String desc) {
+        MethodBean mb = new MethodBean()
+        mb.owner = ownerClass
+        mb.name = name
+        mb.desc = desc
         return mb
     }
 }

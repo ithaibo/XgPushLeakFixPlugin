@@ -1,13 +1,10 @@
 package com.andy.aop.fixxgleak
 
-import com.android.build.gradle.AppExtension
+import com.andy.plugin.model.Params
 import org.gradle.api.GradleException
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
-/**
- * Created by zhangshaowen on 17/6/16.
- */
 class ASMPlugin implements Plugin<Project> {
     private static final String TAG = "ASMPlugin"
 
@@ -18,8 +15,6 @@ class ASMPlugin implements Plugin<Project> {
             throw new GradleException('ASM Plugin, Android Application plugin required')
         }
 
-//        project.extensions.findByType(AppExtension).registerTransform(new ASMTraceTransform(project))
-
         project.afterEvaluate {
             def android = project.extensions.android
             android.applicationVariants.all { variant ->
@@ -27,5 +22,6 @@ class ASMPlugin implements Plugin<Project> {
             }
         }
 
+        //todo 添加try catch 的地方可配置
     }
 }

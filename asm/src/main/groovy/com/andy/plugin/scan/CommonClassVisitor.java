@@ -12,6 +12,8 @@ import org.objectweb.asm.FieldVisitor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 
+import java.util.Objects;
+
 public class CommonClassVisitor extends ClassVisitor {
     private final static String TAG = "ClassVisitor";
     private ClassBean classBean;
@@ -31,6 +33,25 @@ public class CommonClassVisitor extends ClassVisitor {
         classBean.superName = superName;
         classBean.interfaces = interfaces;
         super.visit(version, access, name, signature, superName, interfaces);
+
+        //TODO refactory
+        if (null == interfaces || interfaces.length <= 0) {
+            return;
+        }
+        final String runnable = "java/lang/Runnable";
+        boolean impl = false;
+        for (String interfaceName : interfaces) {
+            if (Objects.equals(interfaceName, runnable)) {
+                impl = true;
+                break;
+            }
+        }
+        if (!impl) {
+            return;
+        }
+        if (!name.contains("\\$")) {
+            Log.i(TAG, "find one implements Runnable:%s", name);
+        }
     }
 
 
