@@ -5,14 +5,13 @@ import com.andy.plugin.model.FieldBean;
 import com.andy.plugin.model.MethodBean;
 import com.andy.plugin.model.Params;
 import com.andy.plugin.util.Log;
+import com.andy.plugin.visitor.ClassInfoReader;
 import com.andy.plugin.visitor.FieldVisitorFactory;
 import com.andy.plugin.visitor.MethodVisitorFactory;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.FieldVisitor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
-
-import java.util.Objects;
 
 public class CommonClassVisitor extends ClassVisitor {
     private final static String TAG = "ClassVisitor";
@@ -24,7 +23,7 @@ public class CommonClassVisitor extends ClassVisitor {
 
     @Override
     public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
-        Log.i(TAG, "visit, class:%s", name);
+//        Log.i(TAG, "visit, class:%s", name);
         classBean = new ClassBean();
         classBean.version = version;
         classBean.access = access;
@@ -34,23 +33,9 @@ public class CommonClassVisitor extends ClassVisitor {
         classBean.interfaces = interfaces;
         super.visit(version, access, name, signature, superName, interfaces);
 
-        //TODO refactory
-        if (null == interfaces || interfaces.length <= 0) {
-            return;
-        }
-        final String runnable = "java/lang/Runnable";
-        boolean impl = false;
-        for (String interfaceName : interfaces) {
-            if (Objects.equals(interfaceName, runnable)) {
-                impl = true;
-                break;
-            }
-        }
-        if (!impl) {
-            return;
-        }
-        if (!name.contains("\\$")) {
-            Log.i(TAG, "find one implements Runnable:%s", name);
+        if (null == Params.classInfoReaders) return;
+        for (ClassInfoReader reader : Params.classInfoReaders) {
+            reader.read(classBean);
         }
     }
 
@@ -71,7 +56,7 @@ public class CommonClassVisitor extends ClassVisitor {
             return superVisitor;
         }
 
-        Log.i(TAG, "visitMethod, name:%s, desc:%s", name, desc);
+//        Log.i(TAG, "visitMethod, name:%s, desc:%s", name, desc);
         for (MethodBean methodBean : Params.methodVisitorMap.keySet()) {
             if (classBean.name.equals(methodBean.owner) &&
                     name.equals(methodBean.name) &&

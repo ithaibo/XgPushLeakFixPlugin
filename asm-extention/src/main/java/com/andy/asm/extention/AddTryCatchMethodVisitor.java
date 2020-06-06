@@ -1,3 +1,5 @@
+package com.andy.asm.extention;
+
 import com.andy.plugin.util.Log;
 import org.objectweb.asm.Label;
 import org.objectweb.asm.MethodVisitor;
@@ -24,7 +26,7 @@ public class AddTryCatchMethodVisitor extends AdviceAdapter {
      * @param name   the method's name.
      * @param desc   the method's descriptor (see {@linkType Type}).
      */
-    protected AddTryCatchMethodVisitor(int api, MethodVisitor mv, int access, String name, String desc, String ownerClass) {
+    public AddTryCatchMethodVisitor(int api, MethodVisitor mv, int access, String name, String desc, String ownerClass) {
         super(api, mv, access, name, desc);
         this.ownerClass = ownerClass;
     }
@@ -77,7 +79,7 @@ public class AddTryCatchMethodVisitor extends AdviceAdapter {
 
     private boolean isReferenceReturn() {
         String[] descArray = methodDesc.split("\\)");
-        Log.i(TAG, "desc:%s", methodDesc);
+//        Log.i(TAG, "desc:%s", methodDesc);
         boolean isObj = false;
         if (descArray.length > 1 && null != descArray[1]) {
             isObj = descArray[1].startsWith("L") || descArray[1].startsWith("[");
@@ -87,7 +89,7 @@ public class AddTryCatchMethodVisitor extends AdviceAdapter {
 
     private boolean isVoidReturn() {
         String[] descArray = methodDesc.split("\\)");
-        Log.i(TAG, "desc:%s", methodDesc);
+//        Log.i(TAG, "desc:%s", methodDesc);
         return (descArray.length > 1 && null != descArray[1] && Objects.equals("V", descArray[1]));
     }
 }

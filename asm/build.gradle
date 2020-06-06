@@ -1,5 +1,4 @@
 plugins {
-    id 'groovy'
     id 'java'
 }
 
@@ -10,14 +9,7 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
-    compile gradleApi()
-    compile localGroovy()
-
     compile 'org.ow2.asm:asm:5.1'
     compile 'org.ow2.asm:asm-commons:5.1'
     compile 'org.ow2.asm:asm-util:5.1'

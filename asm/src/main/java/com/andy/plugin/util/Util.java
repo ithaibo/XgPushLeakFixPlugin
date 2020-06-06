@@ -25,6 +25,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.lang.reflect.Field;
+import java.util.Objects;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipException;
 import java.util.zip.ZipFile;
@@ -181,4 +182,29 @@ public final class Util {
         }
     }
 
+    /**
+     * 输入的方法签名是否返回值为引用类型
+     * @param methodDesc 方法签名
+     * @return 是否返回值为引用类型
+     */
+    public static boolean isReferenceReturn(String methodDesc) {
+        String[] descArray = methodDesc.split("\\)");
+        Log.i(TAG, "desc:%s", methodDesc);
+        boolean isObj = false;
+        if (descArray.length > 1 && null != descArray[1]) {
+            isObj = descArray[1].startsWith("L") || descArray[1].startsWith("[");
+        }
+        return isObj;
+    }
+
+    /**
+     * 给定的方法签名是否返回值为void
+     * @param methodDesc 方法签名
+     * @return 返回值是否为void
+     */
+    public static boolean isVoidReturn(String methodDesc) {
+        String[] descArray = methodDesc.split("\\)");
+        Log.i(TAG, "desc:%s", methodDesc);
+        return (descArray.length > 1 && null != descArray[1] && Objects.equals("V", descArray[1]));
+    }
 }

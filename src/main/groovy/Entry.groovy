@@ -1,3 +1,5 @@
+import com.RunnableOuterImplReader
+import com.andy.asm.extention.AddTryCatchMethodVisitor
 import com.andy.plugin.model.MethodBean
 import com.andy.plugin.model.Params
 import com.andy.plugin.scan.MethodTracer
@@ -74,7 +76,13 @@ class Entry {
 //        methodVisitorMap.put(charCase, factory)
         methodVisitorMap.put(methodBean, factory)
         methodVisitorMap.put(popMethod, factory)
+
+
         Params.methodVisitorMap = methodVisitorMap
+        Params.classInfoReaders = new LinkedList<>()
+        Params.classInfoReaders.add(new RunnableOuterImplReader())
+
+
 //        AsmEntry.scanClassFile(new File('./toscan/g$4.class'))
 //        AsmEntry.scanClassFile(new File('./toscan/g$5.class'))
 //        AsmEntry.scanClassFile(new File('./toscan/d.class'))

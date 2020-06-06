@@ -1,5 +1,6 @@
 package com.andy.plugin.model;
 
+import com.andy.plugin.visitor.ClassInfoReader;
 import com.andy.plugin.visitor.FieldVisitorFactory;
 import com.andy.plugin.visitor.MethodVisitorFactory;
 
@@ -17,4 +18,6 @@ public class Params {
     public static Map<MethodBean, MethodVisitorFactory> methodVisitorMap;
     public static Map<FieldBean, FieldVisitorFactory> fieldVisitorMap;
     public static List<String> methodToScan;
+
+    public static List<ClassInfoReader> classInfoReaders;
 }

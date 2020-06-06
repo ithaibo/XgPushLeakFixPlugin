@@ -18,6 +18,8 @@ dependencies {
     compile localGroovy()
     compile 'com.android.tools.build:gradle:3.1.4'
 
+    compile project(':asm-extention')
+
     compile('com.andy.asm:library:1.0.1-SNAPSHOT'){changing=true}
 }
 

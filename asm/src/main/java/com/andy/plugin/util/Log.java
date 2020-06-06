@@ -1,37 +1,41 @@
-package com.andy.plugin.util
+package com.andy.plugin.util;
 
-class Log {
+
+import java.io.PrintWriter;
+import java.io.StringWriter;
+
+public class Log {
 
     private static LogImp debugLog = new LogImp() {
 
         @Override
         public void v(final String tag, final String msg, final Object... obj) {
             String log = obj == null ? msg : String.format(msg, obj);
-            println(String.format("[VERBOSE][%s]%s", tag, log));
+            System.out.println(String.format("[VERBOSE][%s]%s", tag, log));
         }
 
         @Override
         public void i(final String tag, final String msg, final Object... obj) {
             String log = obj == null ? msg : String.format(msg, obj);
-            println(String.format("[INFO][%s]%s", tag, log));
+            System.out.println(String.format("[INFO][%s]%s", tag, log));
         }
 
         @Override
         public void d(final String tag, final String msg, final Object... obj) {
             String log = obj == null ? msg : String.format(msg, obj);
-            println(String.format("[DEBUG][%s]%s", tag, log));
+            System.out.println(String.format("[DEBUG][%s]%s", tag, log));
         }
 
         @Override
         public void w(final String tag, final String msg, final Object... obj) {
             String log = obj == null ? msg : String.format(msg, obj);
-            println(String.format("[WARN][%s]%s", tag, log));
+            System.out.println(String.format("[WARN][%s]%s", tag, log));
         }
 
         @Override
         public void e(final String tag, final String msg, final Object... obj) {
             String log = obj == null ? msg : String.format(msg, obj);
-            println(String.format("[ERROR][%s]%s", tag, log));
+            System.out.println(String.format("[ERROR][%s]%s", tag, log));
         }
 
         @Override
@@ -44,7 +48,7 @@ class Log {
             PrintWriter pw = new PrintWriter(sw);
             tr.printStackTrace(pw);
             log += "  " + sw.toString();
-            println(String.format("[ERROR][%s]%s", tag, log));
+            System.out.println(String.format("[ERROR][%s]%s", tag, log));
         }
     };
 
