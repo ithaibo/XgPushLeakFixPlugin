@@ -4,9 +4,6 @@ plugins {
 
 apply from: '../local_maven.gradle'
 
-group 'com.andy.aop'
-version '1.0-SNAPSHOT'
-
 sourceCompatibility = 1.8
 
 dependencies {

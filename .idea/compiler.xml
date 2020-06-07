@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="asm-extention.scan.asm-extention.main" target="1.8" />
+      <module name="asm-extention.scan.asm-extention.test" target="1.8" />
       <module name="asm.scan.asm.main" target="1.8" />
       <module name="asm.scan.asm.test" target="1.8" />
       <module name="baseplugin.scan.baseplugin.main" target="1.8" />
@@ -32,6 +34,7 @@
       <module name="scan.test" target="1.8" />
       <module name="XgPushLeakFixPlugin.fixxgleakplugin.scan.fixxgleakplugin.main" target="1.8" />
       <module name="XgPushLeakFixPlugin.fixxgleakplugin.scan.fixxgleakplugin.test" target="1.8" />
+      <module name="XgPushLeakFixPlugin.scan.asm" target="1.8" />
       <module name="XgPushLeakFixPlugin.scan.fixxgleakplugin" target="1.8" />
       <module name="XgPushLeakFixPlugin.scan.main" target="1.8" />
       <module name="XgPushLeakFixPlugin.scan.test" target="1.8" />

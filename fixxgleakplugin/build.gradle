@@ -14,13 +14,12 @@ configurations.all {
 }
 
 dependencies {
-    compile gradleApi()
-    compile localGroovy()
-    compile 'com.android.tools.build:gradle:3.1.4'
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation 'com.android.tools.build:gradle:3.1.4'
 
-    compile project(':asm-extention')
-
-    compile('com.andy.asm:library:1.0.1-SNAPSHOT'){changing=true}
+    implementation("com.andy.asm:library:$VERSION_NAME"){changing=true}
+    implementation("com.andy.asm:asm-extention:$VERSION_NAME"){changing=true}
 }
 
 

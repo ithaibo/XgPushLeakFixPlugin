@@ -1,6 +1,5 @@
 rootProject.name = 'scan'
 include 'asm'
 include 'fixxgleakplugin'
-include 'baseplugin'
 include 'asm-extention'
 
