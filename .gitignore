@@ -5,3 +5,4 @@ build/
 .idea/modules
 mavendir
 after_scan
+.idea/workspace.xml
