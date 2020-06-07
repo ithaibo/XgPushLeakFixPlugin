@@ -8,8 +8,9 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("unused")
 public class PluginUtil {
-    static Map<String, String> asmJavaBasicMap = new HashMap();
+    static Map<String, String> asmJavaBasicMap = new HashMap<>();
     static {
         asmJavaBasicMap.put("Z","boolean");
         asmJavaBasicMap.put("B","byte");
@@ -49,27 +50,26 @@ public class PluginUtil {
 //        Log.i("PluginUtil", "desc:" + descClean)
 
         String[] paramsType = descClean.split(";");
-        if (null != paramsType) {
-            for (int i = 0; i < paramsType.length; i++) {
-                String param = paramsType[i];
-                if (null != param && param.length() < 1) {
-                    continue;
-                } else if (param.length() == 1) {
-                    String type = getJavaBasicTypeByAsm(param);
-                    if (null != type) {
-                        sb.append(type);
-                    } else {
-                        sb.append(param);
-                    }
+        for (int i = 0; i < paramsType.length; i++) {
+            String param = paramsType[i];
+            if (null == param) continue;
+            if (param.length() < 1) {
+                continue;
+            } else if (param.length() == 1) {
+                String type = getJavaBasicTypeByAsm(param);
+                if (null != type) {
+                    sb.append(type);
                 } else {
                     sb.append(param);
                 }
-                if (i != (paramsType.length - 1)) {
-                    sb.append(";");
-                }
+            } else {
+                sb.append(param);
+            }
+            if (i != (paramsType.length - 1)) {
+                sb.append(";");
             }
         }
-//        Log.i("PluginUtil", "desc after clean:" + String.format("(%s)", sb.toString()))
+        //        Log.i("PluginUtil", "desc after clean:" + String.format("(%s)", sb.toString()))
         return String.format("(%s)", sb.toString());
     }
 
@@ -78,14 +78,11 @@ public class PluginUtil {
 
         if (!file.isFile()) return false;
 
-        if (!file.getAbsolutePath().endsWith(".class")) return false;
-
-        return true;
+        return file.getAbsolutePath().endsWith(".class");
     }
 
     public static boolean isPathNeedScan(String path) {
-        if (null == path || path.isEmpty()) return false;
-        return true;
+        return null != path && !path.isEmpty();
     }
 
     public static boolean isGeneratedClass(String path) {
@@ -101,9 +98,7 @@ public class PluginUtil {
         int index = path.lastIndexOf("/");
         if (path.length() -1 > index) {
             String subStr = path.substring(index+1);
-            if (subStr.startsWith("R$")) {
-                return true;
-            }
+            return subStr.startsWith("R$");
         }
         return false;
     }
@@ -114,11 +109,7 @@ public class PluginUtil {
         }
 
         //TODO refactor 提供配置功能
-        if (name.endsWith(".class") && !isGeneratedClass(name)) {
-            return true;
-        }
-
-        return false;
+        return name.endsWith(".class") && !isGeneratedClass(name);
     }
 
     public static void dumpJsonFile(Object obj, String fileName) {

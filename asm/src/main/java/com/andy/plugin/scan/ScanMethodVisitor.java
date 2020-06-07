@@ -36,7 +36,7 @@ class ScanMethodVisitor extends MethodVisitor {
         // 匹配方法扫描列表
         if (null != Params.methodToScan) {
             for (String textMethod : Params.methodToScan) {
-                if (textMethod == methodInvoked) {
+                if (textMethod.equals(methodInvoked)) {
                     MethodInvokeBean methodInvokeBean = new MethodInvokeBean();
                     methodInvokeBean.invoker = String.format("%1s#%2s%3s", className, methodName, methodDesc);
                     methodInvokeBean.invoked = methodInvoked;
