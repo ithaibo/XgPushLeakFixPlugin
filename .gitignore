@@ -1,8 +1,6 @@
 .gradle/
 build/
-.idea/caches/
-.idea/libraries/
-.idea/modules
+.idea/
 mavendir
 after_scan
 .idea/workspace.xml
