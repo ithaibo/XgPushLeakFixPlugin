@@ -32,22 +32,8 @@ configurations.all {
 }
 
 
-
 sourceCompatibility = 1.8
 
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    implementation 'com.google.code.gson:gson:2.8.6'
-    implementation localGroovy()
-
-    implementation("com.andy.plugin:xgleakfix:$VERSION_NAME")
-    implementation("com.andy.asm:library:$VERSION_NAME")
-    implementation("com.andy.asm:asm-extention:$VERSION_NAME")
-}
 
 allprojects {
     repositories {
@@ -71,4 +57,3 @@ allprojects {
         }
     }
 }
-//apply com.andy.plugin: 'com.andy.scan.com.andy.plugin'

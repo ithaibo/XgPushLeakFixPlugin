@@ -18,11 +18,6 @@ public class JarScanner {
     private static String TAG = "JarScanner";
 
 
-    /**
-     * 扫描并处理jar中的类
-     * @param input 待扫描的jar
-     * @param output 处理后的jar
-     */
     static void innerTraceMethodFromJar(File input, File output) {
 //        Log.i(TAG, "transform jar, input:%s, output:%s", input.getAbsolutePath(), output.getAbsolutePath());
         ZipOutputStream zipOutputStream = null;
@@ -67,11 +62,6 @@ public class JarScanner {
     }
 
 
-    /**
-     * 扫描并处理单个class文件
-     * @param file class文件
-     * @return 处理后的class文件
-     */
     static ClassWriter scanClass(File file) throws IOException {
         if(null == file || !file.isFile() || !file.exists()) {
             return null;
@@ -81,11 +71,6 @@ public class JarScanner {
     }
 
 
-    /**
-     * 根据输入的class，返回对应处理的ClassWriter
-     * @param inputStream class文件内容
-     * @return 处理class的ClassWriter
-     */
     static ClassWriter scanClass(InputStream inputStream) throws IOException {
         ClassReader classReader = new ClassReader(inputStream);
         ClassWriter classWriter = new ClassWriter(ClassWriter.COMPUTE_MAXS);

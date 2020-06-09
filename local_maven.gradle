@@ -2,8 +2,11 @@ apply plugin: 'maven'
 
 uploadArchives {
     repositories.mavenDeployer {
-        def mavenDirPath = file(MAVEN_DIR)
-        repository(url:"file://${mavenDirPath.absolutePath}")
+        File file = new File(rootProject.rootDir.absolutePath, 'mavendir/')
+        if(!file.exists()) {
+            file.createNewFile()
+        }
+        repository(url:"file://${file.absolutePath}")
         pom.project {
             groupId POM_GROUP_ID
             artifactId POM_ARTIFACT_ID
