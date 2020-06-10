@@ -25,7 +25,6 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Map;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created by caichongyang on 2017/6/4.
@@ -34,11 +33,10 @@ import java.util.concurrent.atomic.AtomicInteger;
  * </p>
  */
 
+@SuppressWarnings("unused")
 public class MethodTracer {
 
-    private static final String TAG = "Matrix.MethodTracer";
-    private static AtomicInteger traceMethodCount = new AtomicInteger();
-
+    private static final String TAG = "MethodTracer";
     public MethodTracer() {
     }
 
@@ -64,6 +62,7 @@ public class MethodTracer {
         }
     }
 
+    @SuppressWarnings("ResultOfMethodCallIgnored")
     private void innerTraceMethodFromSrc(File input, File output) {
 
         ArrayList<File> classFileList = new ArrayList<>();
@@ -74,12 +73,15 @@ public class MethodTracer {
         }
 
         for (File classFile : classFileList) {
-            InputStream is = null;
             FileOutputStream os = null;
             try {
                 final String changedFileInputFullPath = classFile.getAbsolutePath();
-                final File changedFileOutput = new File(changedFileInputFullPath.replace(input.getAbsolutePath(), output
-                                                                                                                    .getAbsolutePath()));
+                final File changedFileOutput = new File(
+                        changedFileInputFullPath.replace(
+                                input.getAbsolutePath(),
+                                output.getAbsolutePath()
+                        )
+                );
                 if (!changedFileOutput.exists()) {
                     changedFileOutput.getParentFile().mkdirs();
                 }
@@ -87,6 +89,9 @@ public class MethodTracer {
 
                 if (isNeedTraceClassInSrc(classFile)) {
                     ClassWriter classWriter = JarScanner.scanClass(classFile);
+                    if (null == classWriter) {
+                        continue;
+                    }
                     if (output.isDirectory()) {
                         os = new FileOutputStream(changedFileOutput);
                     } else {
@@ -101,7 +106,6 @@ public class MethodTracer {
             } catch (Exception e) {
                 e.printStackTrace();
             } finally {
-                Util.closeQuietly(is);
                 Util.closeQuietly(os);
             }
         }
@@ -124,7 +128,7 @@ public class MethodTracer {
             if (file.isDirectory()) {
                 listClassFiles(classFiles, file);
             } else {
-                if (null != file && file.isFile()) {
+                if (file.isFile()) {
                     classFiles.add(file);
                 }
 
@@ -133,10 +137,11 @@ public class MethodTracer {
     }
 
     public boolean isNeedTraceClassInJar(String fileName) {
+        @SuppressWarnings("UnnecessaryLocalVariable")
         boolean isClass = fileName.endsWith(".class");
-//        boolean isBizCode = fileName.startsWith("com/sample/asm");
-//        boolean isBizCode = fileName.startsWith("com/howbuy/piggy");
-//        return isClass && isBizCode;
+
+        //TODO 可指定范围？
+
         return isClass;
     }
 
@@ -148,10 +153,7 @@ public class MethodTracer {
         boolean result = false;
         boolean isClass = file.getName().endsWith(".class");
         if (isClass) {
-//            String filePath = file.getPath();
-//            if (filePath.contains(convertPackageToPath("com.howbuy.piggy"))) {
-//                result = true;
-//            }
+            //TODO 可指定范围？
             result = true;
         }
         return result;

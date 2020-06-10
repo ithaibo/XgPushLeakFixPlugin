@@ -4,7 +4,7 @@ uploadArchives {
     repositories.mavenDeployer {
         File file = new File(rootProject.rootDir.absolutePath, 'mavendir/')
         if(!file.exists()) {
-            file.createNewFile()
+            file.mkdirs()
         }
         repository(url:"file://${file.absolutePath}")
         pom.project {

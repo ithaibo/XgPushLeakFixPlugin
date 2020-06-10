@@ -1,8 +1,6 @@
 package com.andy.aop.fixxgleak
 
 import com.android.build.api.transform.Transform
-import com.android.build.api.transform.TransformException
-import com.android.build.api.transform.TransformInvocation
 import com.andy.aop.fixxgleak.visitor.AddTryCatchBlockFactory
 import com.andy.plugin.model.FieldBean
 import com.andy.plugin.model.MethodBean
@@ -12,8 +10,8 @@ import com.andy.plugin.util.Log
 import com.andy.plugin.visitor.FieldVisitorFactory
 import com.andy.plugin.visitor.MethodVisitorFactory
 import org.gradle.api.Project
-import org.gradle.api.Task
 
+@SuppressWarnings("unused")
 class ASMTraceTransform extends TraceTransform {
 
     private Map<MethodBean, MethodVisitorFactory> methodVisitorMap
@@ -27,6 +25,7 @@ class ASMTraceTransform extends TraceTransform {
 
     ASMTraceTransform(Project project, def variant, Transform origTransform) {
         super(project, variant, origTransform)
+        //TODO move
         Params.methodToScan = new LinkedList<>()
         Params.methodToScan.add('android/os/HandlerThread#<init>(Ljava.lang.String;)V')
     }
@@ -40,8 +39,6 @@ class ASMTraceTransform extends TraceTransform {
             methodVisitorMap.put(prepareXgEventDaMethodBean(), xgEventDaVisitorFactory)
 
             methodVisitorMap.put(prepareLifecycleRegistryAddTryCatch(), addTryCatchFactory)
-//            methodVisitorMap.put(prepareXgTpushWorkingThread(), )
-
         }
         return methodVisitorMap
     }
@@ -57,11 +54,6 @@ class ASMTraceTransform extends TraceTransform {
         MethodTracer methodTracer = new MethodTracer()
         methodTracer.trace(scrInputMap, jarInputMap)
     }
-
-//    @Override
-//    void transform(TransformInvocation transformInvocation) throws TransformException, InterruptedException, IOException {
-//        super.transform(transformInvocation)
-//    }
 
     @Override
     String getName() {

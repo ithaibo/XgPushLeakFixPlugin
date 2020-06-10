@@ -62,7 +62,7 @@ public class JarScanner {
     }
 
 
-    static ClassWriter scanClass(File file) throws IOException {
+    public static ClassWriter scanClass(File file) throws IOException {
         if(null == file || !file.isFile() || !file.exists()) {
             return null;
         }
@@ -71,11 +71,12 @@ public class JarScanner {
     }
 
 
-    static ClassWriter scanClass(InputStream inputStream) throws IOException {
+    public static ClassWriter scanClass(InputStream inputStream) throws IOException {
         ClassReader classReader = new ClassReader(inputStream);
         ClassWriter classWriter = new ClassWriter(ClassWriter.COMPUTE_MAXS);
         ClassVisitor classVisitor = new CommonClassVisitor(Opcodes.ASM5, classWriter);
         classReader.accept(classVisitor, ClassReader.EXPAND_FRAMES);
+        inputStream.close();
         return classWriter;
     }
 }

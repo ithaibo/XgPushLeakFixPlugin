@@ -15,28 +15,12 @@ buildscript {
     }
 }
 
-plugins {
-    id 'java'
-    id 'groovy'
-}
-
-def dirMavenLocal = new File(rootProject.rootDir, 'mavendir').absolutePath
-def urlMavenLocal = 'file://' + dirMavenLocal
-
-configurations.all {
-    resolutionStrategy.dependencySubstitution {
-        substitute module('com.andy.asm:asm-extention') with project(':asm-extention')
-        substitute module('com.andy.asm:library') with project(':asm')
-        substitute module('com.andy.plugin:xgleakfix') with project(':fixxgleakplugin')
-    }
-}
-
-
-sourceCompatibility = 1.8
 
 
 allprojects {
     repositories {
+        def dirMavenLocal = new File(rootProject.rootDir, 'mavendir').absolutePath
+        def urlMavenLocal = 'file://' + dirMavenLocal
         maven {url urlMavenLocal}
 
         maven {url 'https://maven.aliyun.com/repository/google'}
@@ -50,6 +34,7 @@ allprojects {
 
             dependencySubstitution{
                 substitute module('com.andy.asm:asm-extention') with project(':asm-extention')
+//                substitute module('com.andy.asm:asm-runtime') with project(':asm-runtime')
                 substitute module('com.andy.asm:library') with project(':asm')
                 substitute module('com.andy.plugin:xgleakfix') with project(':fixxgleakplugin')
             }
