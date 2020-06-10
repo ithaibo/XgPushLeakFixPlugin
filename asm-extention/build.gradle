@@ -6,4 +6,5 @@ apply from: '../local_maven.gradle'
 
 dependencies {
     implementation("com.andy.asm:library:$VERSION_NAME"){changing=true}
+    implementation("com.andy.asm:asm-runtime:$VERSION_NAME"){changing=true}
 }

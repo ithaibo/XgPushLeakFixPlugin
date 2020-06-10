@@ -1,5 +1,6 @@
-package com.andy.asm.extention;
+package com.andy.asm.extention.trycat;
 
+import com.andy.asm.extention.TraceResultConsumer;
 import com.andy.plugin.util.Log;
 import org.objectweb.asm.Label;
 import org.objectweb.asm.MethodVisitor;
@@ -11,10 +12,12 @@ import java.util.Objects;
 public class AddTryCatchMethodVisitor extends AdviceAdapter {
     private String TAG = "AddTryCatchBlock";
 
-
     private Label start;
     private Label end;
     private String ownerClass;
+    private String methodName;
+
+    private TraceResultConsumer exceptionHandlerBean;
 
     /**
      * Creates a new {@link AdviceAdapter}.
@@ -26,19 +29,40 @@ public class AddTryCatchMethodVisitor extends AdviceAdapter {
      * @param name   the method's name.
      * @param desc   the method's descriptor (see {@linkType Type}).
      */
-    public AddTryCatchMethodVisitor(int api, MethodVisitor mv, int access, String name, String desc, String ownerClass) {
+    public AddTryCatchMethodVisitor(int api,
+                                    MethodVisitor mv,
+                                    int access,
+                                    String name,
+                                    String desc,
+                                    String ownerClass) {
         super(api, mv, access, name, desc);
         this.ownerClass = ownerClass;
+        this.methodName = name;
+    }
+
+    public AddTryCatchMethodVisitor(int api,
+                                    MethodVisitor mv,
+                                    int access,
+                                    String name,
+                                    String desc,
+                                    String ownerClass,
+                                    TraceResultConsumer exceptionHandlerBean) {
+        this(api, mv, access, name, desc, ownerClass);
+        this.exceptionHandlerBean = exceptionHandlerBean;
+    }
+
+    public void setExceptionHandlerBean(TraceResultConsumer exceptionHandlerBean) {
+        this.exceptionHandlerBean = exceptionHandlerBean;
     }
 
     @Override
     protected void onMethodEnter() {
-        super.onMethodEnter();
         Label l0 = new Label();
         start = new Label();
         end = new Label();
         mv.visitTryCatchBlock(l0, start, end, "java/lang/Exception");
         mv.visitLabel(l0);
+        super.onMethodEnter();
     }
 
     @Override
@@ -52,11 +76,21 @@ public class AddTryCatchMethodVisitor extends AdviceAdapter {
 
         mv.visitVarInsn(ASTORE, 1);
         mv.visitVarInsn(ALOAD, 1);
-        mv.visitMethodInsn(Opcodes.INVOKEVIRTUAL,
-                "java.lang.Exception",
-                "printStackTrace",
-                "()V",
-                false);
+
+        //handle exception occur
+        if (null != exceptionHandlerBean) {
+            mv.visitMethodInsn(Opcodes.INVOKESTATIC,
+                    exceptionHandlerBean.ownerClassname,
+                    exceptionHandlerBean.methodName,
+                    exceptionHandlerBean.methodDesc,
+                    exceptionHandlerBean.interfaceMethod);
+        } else {
+            mv.visitMethodInsn(Opcodes.INVOKEVIRTUAL,
+                    "java.lang.Exception",
+                    "printStackTrace",
+                    "()V",
+                    false);
+        }
 
         Label l4 = new Label();
         mv.visitLabel(l4);
@@ -75,6 +109,8 @@ public class AddTryCatchMethodVisitor extends AdviceAdapter {
 
 
         mv.visitLabel(l3);
+
+        Log.i(TAG, "add try catch block for class:%s, method:%s, desc:%s", ownerClass, methodName, methodDesc);
     }
 
     private boolean isReferenceReturn() {

@@ -1,0 +1,7 @@
+plugins {
+    id 'java'
+}
+
+sourceCompatibility = 1.8
+
+apply from: '../local_maven.gradle'
