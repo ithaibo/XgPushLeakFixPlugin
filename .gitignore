@@ -1,6 +1,5 @@
 .gradle/
 build/
 .idea/
-mavendir
-after_scan
-.idea/workspace.xml
+mavendir/
+after_scan/
