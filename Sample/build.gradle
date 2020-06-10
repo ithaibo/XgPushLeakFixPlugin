@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+version 'unspecified'
+
+sourceCompatibility = 1.8
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation localGroovy()
+
+    implementation("com.andy.plugin:xgleakfix:1.0.1-SNAPSHOT")
+    implementation("com.andy.asm:library:1.0.1-SNAPSHOT")
+    implementation("com.andy.asm:asm-extention:1.0.1-SNAPSHOT")
+    implementation('com.andy.asm:asm-runtime:1.0.1-SNAPSHOT')
+}
